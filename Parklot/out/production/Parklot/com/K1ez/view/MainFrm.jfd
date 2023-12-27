@@ -1,0 +1,78 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:880:x}"
+			"$verticalGroup": "par l {space :0:607:x}"
+		} ) {
+			name: "this"
+			"title": "车库信息主界面"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/密码.png" )
+			"defaultCloseOperation": 3
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "系统设置"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/138设置、系统设置、功能设置、属性.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "修改密码"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/密码.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editPsw", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "退出系统"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/关机.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closewindow", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "车辆管理"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/汽车 (2).png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "车辆编辑"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/icon_添加.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addcar", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "车库管理"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/列表.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "search", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "历史记录"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/_历史小.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "停车记录"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/_历史小2.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openrecord", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": "帮助"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/帮助 (1).png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "关于..."
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/用户_填充.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "About", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 706, 535 )
+		} )
+	}
+}

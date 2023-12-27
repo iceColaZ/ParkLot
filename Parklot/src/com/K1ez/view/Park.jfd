@@ -1,0 +1,127 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp dialogPane::l:::x, comp label4::l:p:610:p}"
+			"$verticalGroup": "par l {seq t {comp label4:::p:84:p, space :p::p, comp dialogPane:::::x}}"
+		} ) {
+			name: "this"
+			"title": "泊车登记"
+			"defaultCloseOperation": 2
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/密码.png" )
+			"visible": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq l {space :::p, comp button3:::p::p, space :p:108:p, comp label1:::p:168:p}, seq l {space :p:28:p, par l {seq l {par t {seq {comp label5:::p::p, space :::p, comp Driver:::p:144:p}, seq {comp button1:::p:71:p, space u:::p, comp button5:::p:80:p}}, space s:::p, par l {comp label6:::p::p, seq {space :p:13:p, comp button4:::p::p, space :p:30:p, comp button2:::p:122:p}}}, seq l {comp label2:::p::p, space :::p, comp CarId:::p:144:p, space :p:20:p, comp label3:::p:104:p, space :::p, par l {comp comboBox1:::p:144:p, comp Color:::p:144:p}}}}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {par l {comp button3:::p::p, comp label1:::p:51:p}, space :p:12:p, par b {comp label2::b:p:32:p, comp CarId::b:p::p, comp label3::b:p::p, comp Color::b:p::p}, space :p:27:p, par b {comp label5::b:p::p, comp Driver::b:p::p, comp label6::b:p::p, comp comboBox1::b:p::p}, space :p:42:p, par b {comp button1::b:p::p, comp button2::b:p::p, comp button4::b:p::p, comp button5::b:p::p}, space ::33:x}}"
+				"honorsVisibility": false
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				"opaque": false
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "入库登记"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/汽车 (1).png" )
+					"font": new java.awt.Font( "等线 Light", 1, 24 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "车牌号"
+					"font": new java.awt.Font( "等线 Light", 0, 16 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/用户-圆.png" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "CarId"
+					"opaque": false
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "汽车颜色"
+					"font": new java.awt.Font( "等线 Light", 0, 16 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/密码.png" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Color"
+					"opaque": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "重置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reset", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "驾驶人"
+					"font": new java.awt.Font( "等线 Light", 0, 16 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/用户_填充.png" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "Driver"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "登记"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Park", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Park", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Entry", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "< 返回"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "back", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "查看车位"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Check", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboBox1"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "车位1"
+						addElement( "车位1" )
+						addElement( "车位2" )
+						addElement( "车位3" )
+						addElement( "车位4" )
+						addElement( "车位5" )
+						addElement( "车位6" )
+						addElement( "车位7" )
+						addElement( "车位8" )
+						addElement( "车位9" )
+						addElement( "车位10" )
+						addElement( "车位11" )
+						addElement( "车位12" )
+						addElement( "车位13" )
+						addElement( "车位14" )
+						addElement( "车位15" )
+						addElement( "车位16" )
+						addElement( "车位17" )
+						addElement( "车位18" )
+						addElement( "车位19" )
+						addElement( "车位20" )
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "选择车位"
+					"font": new java.awt.Font( "等线 Light", 0, 16 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/密码.png" )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "登出"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Out", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/img.png" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 490, 346 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
